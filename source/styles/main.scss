@@ -1,0 +1,21 @@
+@use 'variaveis';
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: white;
+
+    img{
+        max-width: 300px;
+        
+    }
+}
+
+.container {
+    margin: 32px;
+}
