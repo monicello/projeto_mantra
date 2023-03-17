@@ -28,5 +28,5 @@ function compilaSass() {
 
 exports.default = function() {
     gulp.watch('./source/styles/*.scss', { ignoreInitial: false } , gulp.series(compilaSass));
-    gulp.watch('./source/images/*', { ignoreInitial: false } , gulp.series(comprimeImagens));
+    gulp.watch('./source/images/*', { ignoreInitial: false }, gulp.series(comprimeImagens))
 }

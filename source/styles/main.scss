@@ -4,18 +4,67 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: variaveis.$fontePrincipal;
 }
 
-body {
+header {
     background-color: white;
+    .container {
+        .navbar-brand {
+            img {
+                margin-top: 20px;
+                margin-left: 80px;
+                margin-right: 120px;
+                width: 350px;
+            }
+        }
+        button {
+            display: flex;
+            margin: 0 auto;
+        }
 
-    img{
-        max-width: 300px;
-        
+        .navbar {
+
+            .nav {
+                &-item {
+
+                }
+                &-link {
+
+                    font-size: 14px;
+                    color: black; 
+                }
+
+                .active {
+                    background-color: variaveis.$corLaranja;
+                    color: white;
+                    border-radius: 20px;
+                }
+            }
+
+            @media (max-width: 767px) {
+                margin-left: 180px;
+                margin-top: 24px;
+            }
+        }
     }
 }
 
-.container {
-    margin: 32px;
+section {
+    background-color: black;
+
+    .carousel-slide{
+
+        .carousel-inner {
+            
+            .carousel-item {
+                img {
+                    width: 800px;
+                }
+            }
+        }
+    }
 }
+
+
+

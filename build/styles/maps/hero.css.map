@@ -1,0 +1,1 @@
+{"version":3,"sources":["hero.scss"],"names":[],"mappings":"AAAA,MACI,iBACA,sBACA,aAEA,UACI","file":"../hero.css","sourcesContent":[".hero {\n    max-width: 1024px;\n    background-color: white;\n    height: 200px;\n\n    img {\n        max-width: 550px;\n    }\n}\n"]}
