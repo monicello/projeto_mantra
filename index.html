@@ -23,25 +23,23 @@
             <nav class="navbar navbar-collapse collapse" id="menu-navegacao">
                 <ul class="nav d-block d-md-flex">
                     <li class="nav-item ">
-                        <a class="nav-link"  href="#sobre-o-mantra">
-                            <i class="bi bi-pencil-square me-1"></i>Sobre</a>
+                        <a class="nav-link" href="#sobre-o-mantra">
+                            <i class="bi bi-pencil-square me-1"></i> Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">
+                        <a class="nav-link" href="#equipe">
                             <i class="bi bi-person-bounding-box"></i> Nossa Equipe</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">
-                            <i class="bi bi-music-note"></i> Nossas Produções</a>
+                        <a class="nav-link" href="#servicos">
+                            <i class="bi bi-music-note"></i> Nossos Serviços</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">
+                        <a class="nav-link" href="#fale-conosco">
                             <i class="bi bi-telephone"></i> Fale conosco</a>
                     </li>
-
                 </ul>
             </nav>
-
         </div>
     </header>
     <div data-bs-spy="scroll" data-bs-target="#cabecalho">
@@ -87,12 +85,12 @@
                 </div>
             </div>
         </section>
-        <div id="equipe" class="pt-5 pb-5">
+        <section id="equipe" class="pt-5 pb-5">
             <div class="container">
                 <div class="row">
-                    <h2 class="section-title text-center">Equipe</h2>
+                    <h2 class="section-title text-center pt-3">Equipe</h2>
                 </div>
-                <div class="row">
+                <div class="row pt-5">
                     <div class="col-md-4 mt-4">
                         <img class="d-block w-100 mb-2 rounded" src="source/images/michelle.jpeg" alt="Michelle">
                         <h3 class="section-title fs-4">Michelle Picasso</h3>
@@ -127,7 +125,136 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <section id="servicos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section title text-center mb-5">Nossos Serviços</h2>
+                </div>
+                <div class="row servicos pt-5">
+                    <aside class="col-md-5">
+                        <nav class="nav nav-pills flex-column">                            
+                            <button data-bs-toggle="tab" data-bs-target="#producao" type="button" class="fw-bold text-start nav-link active">
+                                Produção
+                            </button>
+                            <button data-bs-toggle="tab" data-bs-target="#iluminacao" type="button" class="fw-bold text-start nav-link">
+                                Iluminação
+                            </button>
+                            <button data-bs-toggle="tab" data-bs-target="#arranjos" type="button" class="fw-bold text-start nav-link">
+                                Arranjos
+                            </button>
+                            <button data-bs-toggle="tab" data-bs-target="#acessoria" type="button" class="fw-bold text-start nav-link">
+                                Acessoria
+                            </button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-7">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="producao">
+                                <div class="row">
+                                    <div class="col">
+                                        <img class="d-block w-100" src="source/images/iluminacao.jpeg" alt="">
+                                        <h5 class="fw-bold mt-2">Produções</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="iluminacao">
+                                <div class="row">
+                                    <div class="col">
+                                        <img class="d-block w-100" src="source/images/iluminacao.jpeg" alt="">
+                                        <h5 class="mt-2 fw-bold">Iluminação</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="arranjos">
+                                <div class="row">
+                                    <div class="col">
+                                        <img class="d-block w-100" src="source/images/iluminacao.jpeg" alt="">
+                                        <h5 class="mt-2 fw-bold">Arranjos</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="acessoria">
+                                <div class="row">
+                                    <div class="col">
+                                        <img class="d-block w-100" src="source/images/iluminacao.jpeg" alt="">
+                                        <h5 class="mt-2 fw-bold">Acessoria</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="fale-conosco" class="pb-5 pt-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="titulo text-center mb-5 pt-5">Fale <span>conosco</span></h2>
+                    <div class="row">
+                        <div class="col-md-7 mb-5">                        
+                            <form>
+                                <div class="mb-3 mt-3">
+                                    <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                                    <input type="text" id="nome" class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
+                                    <input type="email" id="email" class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="telefone" class="form-label fw-bold text-colored">Seu telefone</label>
+                                    <input type="tel" id="nome" class="form-control">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mensagem" class="form-label fw-bold text-colored">Seu mensagem</label>
+                                    <textarea class="form-control" id="mensagem" required></textarea>
+                                </div>
+                                <button type="submit" class="btn fw-bold">Enviar</button>
+                            </form>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="row">
+                                <h3 class="titulo fs-4 text-colored mt-3">
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                    Redes sociais</h3>
+                                <ul class="social-links">
+                                    <li class="fs-5">
+                                        <a href="#">
+                                            <i class="bi bi-facebook text-colored"></i>
+                                        </a>
+                                    </li>
+                                    <li class="fs-5 ms-2 me-2">
+                                        <a href="#">
+                                            <i class="bi bi-instagram text-colored"></i>
+                                        </a>
+                                    </li>
+                                    <li class="fs-5">
+                                        <a href="#">
+                                            <i class="bi bi-whatsapp text-colored"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row mt-4">
+                                <h3 class="titulo fs-4 text-colored">
+                                    <i class="bi bi-cursor-fill"></i>
+                                    Endereço
+                                </h3>
+                                <p>
+                                    Rua Teste Exemplo nº145, Bairro Bootstrap - São Paulo - SP
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 
