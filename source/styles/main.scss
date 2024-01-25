@@ -5,6 +5,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: variaveis.$fontePrincipal;
+    list-style: none;
 }
 
 header {
@@ -13,14 +14,18 @@ header {
         .navbar-brand {
             img {
                 margin-top: 8px;
-                margin-left: 80px;
-                margin-right: 120px;
-                width: 350px;
+                max-width: 300px;
+                
+
+                @media (max-width: 767px) {
+                    width: 300px;
+                }
             }
         }
         button {
             display: flex;
             margin: 0 auto;
+
         }
 
         .navbar {
@@ -30,23 +35,19 @@ header {
 
                 }
                 &-link {
-
                     font-size: 14px;
                     color: black; 
+
                 }
 
-                .active {
-                    background-color: variaveis.$corLaranja;
-                    color: white;
-                    border-radius: 20px;
-                }
             }
 
-            @media (max-width: 767px) {
-                margin-left: 180px;
-                margin-top: 24px;
+            .active {
+                background-color: variaveis.$corLaranja;
+                color: white;                    
             }
-        }
+            
+        }        
     }
 }
 
@@ -67,6 +68,17 @@ section {
     }
 }
 
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
+
+    
+}
+
+
+
 #equipe {
     background-color: black;
     .container {
@@ -76,10 +88,75 @@ section {
     }
 }
 
+.section-title {
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
 .servicos {
-    #producao, #iluminacao, #arranjos, #acessoria {
+    #producao, #iluminacao, #arranjos, #acessoria {    
         img {
             max-width: 550px;
+        }
+    }
+
+    .nav {
+        button {
+            color: white;
+        }
+
+        button.active {
+            background-color: variaveis.$corLaranja;
+        }
+
+        
+    }
+}
+
+#fale-conosco {
+    input {
+        &:hover {
+            border-color: variaveis.$corRoxa;
+        }
+    }
+
+    button {
+        color: variaveis.$corRoxa;
+        background-color: variaveis.$corLaranja;;
+    }
+
+    .social-links li {
+        display: inline;
+    }
+
+    .social-links a {
+        color: variaveis.$corRoxa;
+        text-decoration: none;
+        
+
+        #facebook {
+            margin-left: 34px;
+            color: #1877f2;
+        }
+
+        #instagram {
+            color: rgb(198, 6, 221);
+        }
+
+        #whatsapp {
+            color: #158501;
+        }
+    }
+}
+
+footer {
+    background-color: variaveis.$corLaranja;
+    color: variaveis.$corRoxa;
+    padding: 16px 0px;
+
+    .container {
+        p {
+            margin: 0px;
         }
     }
 }
